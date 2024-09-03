@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "generalsans-regular";
+    src: url("/fonts/GeneralSans-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "generalsans-medium";
+    src: url("/fonts/GeneralSans-Medium.woff") format("woff");
+  }
+  @font-face {
+    font-family: "generalsans-semibold";
+    src: url("/fonts/GeneralSans-Semibold.woff") format("woff");
+  }
+  @font-face {
+    font-family: "generalsans-bold";
+    src: url("/fonts/GeneralSans-Bold.woff") format("woff");
+  }
+  html {
+    scroll-behavior: smooth;
+    font-family: "generalsans-medium";
+  }
+  html::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  html::-webkit-scrollbar-thumb {
+    background-color: var(--stroke-color);
+    border-radius: 6px;
+  }
+  body{
+    background: #FCFCFC;
+  }
+  h1 {
+    font-family: "generalsans-bold", sans-serif;
+    font-size: 3rem;
+  }
+  h2 {
+    font-family: "generalsans-bold", sans-serif;
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-family: "generalsans-semibold";
+    font-size: 2rem;
+  }
+  h4 {
+    font-family: "generalsans-semibold";
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-family: "generalsans-medium";
+    font-size: 1.25rem;
+  }
+  h6 {
+    font-family: "generalsans-regular";
+    font-size: 1.25rem;
+  }
+  p {
+    font-family: "generalsans-regular";
+    font-size: 1rem;
+  }
+  .wave{
+    background-image: url( '/images/wave.png' );
+    background-repeat: no-repeat;
+  }
+  .semibold{
+    font-family: "generalsans-semibold";
+  }
+  .hole {
+    width: 40px;
+    height: 40px;
+    background-color: #22292f;
+    border-radius: 50%;
+  }
+  .ripped {
+    width: 40px;
+    height: 20px;
+    background-color: #fcfcfc;
+    border-radius: 0px 0px 200px 200px;
+    border-left: solid 2px #22292f;
+    border-right: solid 2px #22292f;
+    border-bottom: solid 2px #22292f;
+  }
+  .holes-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  .inner-hole{
+    width: 25px;
+    height: 25px;
+    box-shadow: inset 2px 2px 4px rgba(139, 139, 139, 0.5);
+    border-radius: 50%;
+  }
+  @media (max-width: 	640px) {
+    .hole {
+      width: 15px;
+      height: 15px;
+    }
+    .ripped {
+      width: 30px;
+      height: 20px;
+      background-color: #fcfcfc;
+      border-radius: 0px 0px 200px 200px;
+      border-left: solid 2px #22292f;
+      border-right: solid 2px #22292f;
+      border-bottom: solid 2px #22292f;
+    }
+    .holes-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+  }
+}

@@ -22,7 +22,7 @@ const About = () => {
       </div>
       <div className="rounded-2xl bg-accent-500 border-darkcolor border-2 sm:p-11 p-5 flex flex-col sm:-mt-5 -mt-[20px]">
         <h1 className="self-start text-basecolor my-10 flex flex-wrap ">
-          <span className="bg-primary-500 pr-3">About</span><span className="bg-primary-500 pr-3">Neo</span><span className="bg-primary-500 pr-3">One</span>
+          <span className="bg-darkcolor text-basecolor pr-3">About</span><span className="bg-darkcolor text-basecolor pr-3">Neo</span><span className="bg-darkcolor text-basecolor pr-3">One</span>
         </h1>
         <h5>
           Neo One is an agency dedicated to helping our clients innovate in the

@@ -18,9 +18,9 @@ const Footer = () =>{
               </form>
             </div>
           </div>
-          <div className="flex xl:ml-0 lg:ml-10 flex-wrap gap-8 lg:mt-0 mt-20">
-            <ul>
-              <h5>Services</h5>
+          <div className="flex xl:ml-0 lg:ml-6 ml-8 flex-wrap gap-10 lg:mt-0 mt-20">
+            <ul className="text-gray-500 list-disc">
+              <h5 className="-ml-5 text-white">Services</h5>
               <li>
                 <a href="">Website development</a>
               </li>
@@ -28,8 +28,8 @@ const Footer = () =>{
                 <a href="">Education Technology</a>
               </li>
             </ul>
-            <ul>
-              <h5>About</h5>
+            <ul className="text-gray-500 list-disc">
+              <h5 className="-ml-5 text-white">About</h5>
               <li>
                 <button>
                 What we do?
@@ -49,8 +49,8 @@ const Footer = () =>{
                 </button>
               </li>
             </ul>
-            <ul>
-              <h5>Contact</h5>
+            <ul className="text-gray-500 list-disc">
+              <h5 className="-ml-5 text-white">Contact</h5>
               <li>
                 <button className="flex items-center">
                   <i className="bx bxs-phone text-2xl mr-2"></i>+62 895 6221 44623
